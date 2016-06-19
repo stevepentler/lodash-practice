@@ -13,6 +13,8 @@ function sortTowns(towns) {
   }
 
   _.forEach(towns, function(town, townName) {
+    console.log("townName", townName)
+    console.log("town", town)
     if (_.every(town, gaugeTemp)) {
       type.hot.push(townName);
     } else if (_.some(town, gaugeTemp)) {
